@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <nav className={styles["header--container"]}>
       <div className={styles["picture--container"]}>
-        <img src="/public/images/Ana.jpg" alt="Ana" className={styles.me} />
+        <img src="/images/Ana.jpg" alt="Ana" className={styles.me} />
         <h3>Ana Arevadze</h3>
       </div>
       <ul className={styles["sections--container"]}>

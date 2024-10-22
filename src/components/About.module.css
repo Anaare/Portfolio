@@ -1,19 +1,19 @@
 .about--me {
   width: 100vw;
-  height: auto; /* Adjust height to auto for better flexibility */
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
-  background-color: #e0e0e0; /* Consider a gradient for more depth */
+  background-color: #e0e0e0;
   color: #333;
 }
 
 .about--me h2 {
   font-size: 70px;
   margin-bottom: 15px;
-  text-align: center; /* Centered for a balanced look */
+  text-align: center;
 }
 
 .intro--text {
