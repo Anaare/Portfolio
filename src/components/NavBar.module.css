@@ -1,0 +1,41 @@
+.header--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #323232;
+  width: 100vw;
+  height: 80px;
+}
+
+.picture--container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.me {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.sections--container {
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.link {
+  list-style: none;
+  color: inherit;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.active {
+  color: inherit;
+  font-size: 20px;
+  text-decoration: underline;
+}
