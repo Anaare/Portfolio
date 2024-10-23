@@ -71,3 +71,36 @@ button:hover {
   background-color: #888;
   cursor: pointer;
 }
+
+.modal--backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal--content {
+  /* background: transparent; */
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure the Contact component is centered and visible */
+.modal--content > * {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

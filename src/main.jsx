@@ -10,7 +10,6 @@ import App from "./components/App.jsx";
 import "./index.css";
 import About from "./components/About.jsx";
 import Projects from "./components/Projects.jsx";
-import Contact from "./components/Contact.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,7 +17,6 @@ const router = createBrowserRouter(
       <Route path="/" element={<App />}></Route>
       <Route path="/about" element={<About />}></Route>
       <Route path="/projects" element={<Projects />}></Route>
-      <Route path="/contact" element={<Contact />}></Route>
     </>
   )
 );

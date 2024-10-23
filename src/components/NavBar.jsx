@@ -5,18 +5,12 @@ function NavBar() {
   return (
     <nav className={styles["header--container"]}>
       <div className={styles["picture--container"]}>
-        <img src="/images/Ana.jpg" alt="Ana" className={styles.me} />
+        <NavLink to="/">
+          <img src="/images/Ana.jpg" alt="Ana" className={styles.me} />
+        </NavLink>
         <h3>Ana Arevadze</h3>
       </div>
       <ul className={styles["sections--container"]}>
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            `${styles.link} ${isActive ? styles.active : ""}`
-          }
-        >
-          Home
-        </NavLink>
         <NavLink
           to="/about"
           className={({ isActive }) =>
@@ -32,14 +26,6 @@ function NavBar() {
           }
         >
           Projects
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            `${styles.link} ${isActive ? styles.active : ""}`
-          }
-        >
-          Contact
         </NavLink>
       </ul>
     </nav>

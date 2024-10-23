@@ -1,25 +1,39 @@
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import NavBar from "./NavBar";
 import styles from "./Home.module.css";
 import { NavLink } from "react-router-dom";
+import { useState, useCallback } from "react";
+import Contact from "./Contact";
+
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const closeModal = useCallback(() => {
+    setIsModalOpen(false);
+  }, []);
+
   return (
     <>
       <NavBar />
       <div className={styles["main--container"]}>
         <div className={styles["links--container"]}>
-          <a href="https://github.com/Anaare" target="_blank">
-            <i className={`fab fa-github ${styles.icon}`}></i>
+          <a href="https://github.com/Anaare" target="_blank" rel="noreferrer">
+            <FaGithub className={styles.icon} />
           </a>
           <a
             href="https://www.linkedin.com/in/ana-arevadze-47b116332/"
             target="_blank"
+            rel="noreferrer"
           >
-            <i className={`fab fa-linkedin ${styles.icon}`}></i>
+            <FaLinkedin className={styles.icon} />
           </a>
-          <a href="mailto:aarevadze41@gmail.com">
-            <i className={`far fa-envelope ${styles.icon}`}></i>
-          </a>
+          <FaEnvelope
+            className={styles.icon}
+            onClick={() => setIsModalOpen(true)}
+            style={{ cursor: "pointer" }}
+          />
         </div>
+
         <div className={styles["home--container"]}>
           <h2>HEY, I&#39;M ANA</h2>
           <p>
@@ -31,6 +45,17 @@ export default function Home() {
           </NavLink>
         </div>
       </div>
+
+      {isModalOpen && (
+        <div className={styles["modal--backdrop"]} onClick={closeModal}>
+          <div
+            className={styles["modal--content"]}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Contact />
+          </div>
+        </div>
+      )}
     </>
   );
 }

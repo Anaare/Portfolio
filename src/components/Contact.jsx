@@ -1,10 +1,8 @@
-import NavBar from "./NavBar";
 import styles from "./Contact.module.css";
 
 export default function Contact() {
   return (
     <div>
-      <NavBar />
       <section className={styles["contact"]} id="contact">
         <form className={styles["contact--form"]}>
           <label htmlFor="user--name">Name:</label>
