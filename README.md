@@ -18,6 +18,7 @@ Welcome to my portfolio! I am a web developer with a background in finance, now 
 - CSS
 - JavaScript (ES6+)
 - React
+- Vite
 - Git & GitHub
 
 ## Installation Instructions
