@@ -8,10 +8,10 @@ export default function Projects() {
     <div>
       <NavBar />
       <section className={styles.projects} id="projects">
-        <h2>PROJECTS</h2>
+        <h2>Projects</h2>
         <p className={styles["intro--text"]}>
-          Here you&apos;ll find info about the projects I&apos;ve worked on in
-          details, including the tools I used.
+          {`Here you'll find info about the projects I've worked on in
+            details, including the tools I used.`}
         </p>
         <div className={styles.container}>
           {projects.map((project) => (
